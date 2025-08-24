@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Melodrama-Medium;
+    src: url('../fonts/Melodrama-Medium.ttf');
+}
+
+@font-face {
+    font-family: Melodrama-Medium-latin;
+    src: url('../fonts/montserrat-v30-latin-700.ttf');
+}
+
+
+@font-face {
+    font-family: Melodrama-regular;
+    src: url('../fonts/montserrat-v30-latin-regular.ttf');
+}
