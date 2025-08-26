@@ -13,9 +13,35 @@
     src: url('../fonts/montserrat-v30-latin-regular.ttf');
 }
 
+body {
+    transition: background-color ease-out .5s,
+}
+
 main {
     overflow: hidden;
     width: 100%;
+}
+
+body[theme="black"] {
+    background-color: #000000;
+}
+
+body[theme="black"] .section {
+    color: #fff;
+}
+
+body[theme="#D3D0C6"] {
+    background-color: #D3D0C6;
+
+}
+
+body[theme="#D3D0C6"] .section {
+    color: #101010;
+}
+
+body[theme="black"] {
+    background-color: #000000;
+    color: #fff;
 }
 
 .feferenzen-section img {
@@ -64,9 +90,6 @@ main {
     transform: translate(-50%, -50%) scale(0);
     z-index: 50;
 }
-
-
-
 
 
 @media (max-width:850px) {
