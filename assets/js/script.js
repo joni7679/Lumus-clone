@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
             .from("nav a, .social-icons, .logo", {
                 y: -100,
                 opacity: 0,
-                stagger: 0.2
+                stagger: 0.2,
+                ease: "power2.out",
+
             });
     }
     navbarAnimation()
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     start: "top 60%",
                     end: "bottom 60%",
                     // markers: true,
+                    ease: "power2.out",
                     onEnter: function () {
                         document.body.setAttribute("theme", elem.dataset.color)
                     },
@@ -199,7 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 const rect = card.getBoundingClientRect();
                 const x = event.clientX - rect.left;
                 const y = event.clientY - rect.top;
-
                 gsap.to(customCursor, {
                     x: x + rect.left,
                     y: y + rect.top,
@@ -259,6 +261,7 @@ document.addEventListener("DOMContentLoaded", () => {
             stagger: 0.05
         });
     }
+
     partner();
 
 
